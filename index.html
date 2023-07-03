@@ -97,7 +97,7 @@
 
 <section id="video-bg" class="hidden-sm hidden-xs">
     <div id="bgndVideo" class="player"
-         data-property="{videoURL:'https://youtu.be/SWc2zryndH8',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">
+         data-property="{videoURL:'https://youtu.be/_p00x4m5Zko',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">
     </div>
     <div class="video-content">
         <h5>Finca el Gasco</h5>
@@ -166,34 +166,38 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" autocomplete="email" name="email" class=""
-                                                                     placeholder="Email"
-                                                                     required>
+                                <i class="fa fa-envelope"></i>
+                                <input type="email" autocomplete="email" name="email" class=""
+                                    placeholder="Email"
+                                    required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" autocomplete="name" class=""
-                                                                 placeholder="Nombre completo"
-                                                                 required>
+                                <i class="fa fa-user"></i>
+                                <input name="Nombre" autocomplete="name" class=""
+                                    placeholder="Nombre completo"
+                                    required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="8"
-                                                                  placeholder="Número de asistentes"
-                                                                  required>
+                                <i class="fa fa-users"></i>
+                                <input type="number" name="Asistentes" class="" min="1"
+                                    max="20"
+                                    placeholder="Número de asistentes"
+                                    required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-key"></i><input name="invite_code" id="invite_code"
-                                                                class=""
-                                                                placeholder="Código de invitacióń"
-                                                                required>
+                                <i class="fa fa-key"></i>
+                                <input name="invite_code" id="invite_code"
+                                    class=""
+                                    placeholder="Código de invitacióń"
+                                    required>
                             </div>
                         </div>
                     </div>
@@ -201,8 +205,11 @@
                         <div class="col-md-12 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-bus"></i>
-                                <input type="checkbox" name="bus" id="bus" class="bus">
-                                <label for="bus">Necesitaré autobús</label>
+                                <select name="Bus">
+                                    <option value="No">No necesito</option>
+                                    <option value="Moraleja">Autobús desde La Moraleja</option>
+                                    <option value="Otro">Autobús desde ...</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -210,7 +217,7 @@
                         <div class="col-lg-12">
                             <div class="form-input-group">
                                 <i class="fa fa-comment"></i>
-                                <textarea name="allergies" class="allergies" min="0"
+                                <textarea name="Alergias" class="allergies" min="0"
                                     placeholder="Por favor, indícanos si tenéis alguna alergia"></textarea>
                             </div>
                         </div>

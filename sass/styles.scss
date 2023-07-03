@@ -836,6 +836,17 @@ RSVP form
         transform: translateY(-50%);
         margin-left: 20px;
       }
+      select {
+        padding-left: 15px;
+        margin-left: 48px;
+        background-color: #fff;
+        width: 90%;
+        height: 100%;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        border: none;
+      }
       input {
         padding-left: 68px;
         width: 100%;
