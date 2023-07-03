@@ -225,7 +225,7 @@
     .events .rightcol {
         padding: 0 20px;
     }
-    
+
     #eng-pics .img-wrap {
         border-radius: 0;
     }
@@ -233,15 +233,17 @@
     #map-content-wrapper {
         margin-bottom: 40px;
     }
-    
+
     #map-content {
         margin-top: 0;
         padding: 35px;
     }
 
+    /*
     .rsvp {
-        padding-top: 40px;
+        padding-top: 160px;
     }
+    */
 
     footer .social-share {
         display: none;
@@ -268,7 +270,7 @@
     #map-content-wrapper {
         margin-bottom: 0;
     }
-    
+
     footer ul.footer-group {
         border-top: none;
     }
@@ -295,7 +297,7 @@
     .hero .hero-content {
         padding-top: 110%;
     }
-    
+
     .hero .hero-content img {
         width: 65%;
     }
@@ -360,7 +362,9 @@
         padding-top: 130%;
     }
 
+    /*
     .rsvp {
         padding-top: 20px;
     }
+    */
 }
