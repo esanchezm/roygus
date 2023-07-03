@@ -296,6 +296,9 @@ Hero
   background-color: rgba(55, 36, 40, .88);
   z-index: 999;
   width: 100%;
+  .logo img {
+    filter: invert(100%);
+  }
 }
 header {
   padding: 50px 0;
