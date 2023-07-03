@@ -58,6 +58,9 @@ section .header {
 }
 .section-padding {
   padding: $section-padding;
+  h1 {
+    font-size: 3em;
+  }
 }
 .section-border {
   border-bottom: 1px solid $keyline-color;

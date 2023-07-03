@@ -214,10 +214,10 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Un momento</strong>. Estamos guardando los datos...'));
 
-        if (MD5($('#invite_code').val()) !== 'f9d89a2d5268f2699a7d63ac669e001f') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+        if (MD5($('#invite_code').val().toUpperCase()) !== 'f9d89a2d5268f2699a7d63ac669e001f') {
+            $('#alert-wrapper').html(alert_markup('danger', '<strong>¡Ups!!</strong> El código no es correcto.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbykMYasN4QNl3fXx7tDCMjzcFGXt_eO1VCL0egTWuGbyNn7-wRTKRvivuKjln1RLKE2/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbzn8MyidjB2xY7IcVn4UQ2oWXPf6rUs2J74gwTTDR9tvjkQ43KwC_SvBP4bBH8dzxFl/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
