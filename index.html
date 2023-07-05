@@ -43,7 +43,7 @@
     <section class="navigation">
         <header>
             <div class="header-content">
-                <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div>
+                <!-- <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div> -->
                 <div class="header-nav">
                     <nav>
                         <ul class="primary-nav">
@@ -88,7 +88,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h3>Nos gustaría compartir con vosotros este día tan especial</h3>
+                <h3>Nos haría muchísima ilusión que nos acompañárais en nuestro día</h3>
                 <h1> 21 de Octubre 2023 </h1>
             </div>
         </div>
@@ -101,21 +101,13 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h3>Iglesia</h3>
-                <h1>Parroquia Santa María de Caná</h1>
+                <h1>Parroquia Santa María de Caná</a></h1>
+                <h2>Av. de Europa, 6</h2>
                 <h2>Pozuelo de Alarcón</h2>
                 <h3>13:00</h3>
+                <p><a href="https://goo.gl/maps/4m1BvKsxwXRJxi2S8" target="_blank">Ir al mapa</a></p>
             </div>
         </div>
-    </div>
-</section>
-
-<section id="video-bg" class="hidden-sm hidden-xs">
-    <div id="bgndVideo" class="player"
-         data-property="{videoURL:'https://youtu.be/_p00x4m5Zko',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">
-    </div>
-    <div class="video-content">
-        <h5>Parroquia Santa María de Caná</h5>
-        <p>Pozuelo de Alarcón</p>
     </div>
 </section>
 
@@ -126,8 +118,8 @@
                 <h3>Celebración</h3>
                 <h1>Finca el Gasco</h1>
                 <h2>Torrelodones</h2>
-                <h3>13:00</h3>
-                <p><a href="#map">Ir al mapa</a></p>
+                <h3>17:00</h3>
+                <p><a href="https://goo.gl/maps/G3nAjjuEvH7tLLat5" target="_blank">Ir al mapa</a></p>
             </div>
         </div>
     </div>
@@ -180,7 +172,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h4>Lista de bodas</h4>
-                <p>Vuestra presencia es el mejor regalo, pero si queréis ayudar en esta nueva vida juntos, ¡os estaremos muy agradecidos!</p>
+                <p>Vuestra presencia es el mejor regalo, pero si queréis ayudar en nuestra nueva vida juntos, ¡os estaremos muy agradecidos!</p>
             </div>
         </div>
     </div>
@@ -215,6 +207,7 @@
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
+                    <input name="invite_code" id="invite_code" type="hidden" value="RG23">
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
@@ -245,23 +238,20 @@
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-key"></i>
-                                <input name="invite_code" id="invite_code"
-                                    class=""
-                                    placeholder="Código de invitacióń"
-                                    required>
+                                <i class="fa fa-bus"></i>
+                                <select name="Bus">
+                                    <option value="No">No necesito</option>
+                                    <option value="Sí">Sí necesito</option>
+                                </select>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 col-sm-6">
+                        <div class="col-md-12 col-sm-12">
                             <div class="form-input-group">
-                                <i class="fa fa-bus"></i>
-                                <select name="Bus">
-                                    <option value="No">No necesito</option>
-                                    <option value="Moraleja">Autobús desde La Moraleja</option>
-                                    <option value="Otro">Autobús desde ...</option>
-                                </select>
+                                <i class="fa fa-bed"></i>
+                                <input type="checkbox" class="dormir" id="dormir" name="Dormir cerca" value="Sí" />
+                                <label for="dormir">Me interesa dormir cerca de la finca</label>
                             </div>
                         </div>
                     </div>
@@ -274,6 +264,14 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-input-group">
+                                <i class="fa fa-music"></i>
+                                <textarea name="Canción" class="allergies" min="0"
+                                    placeholder="¿Qué canción te gustaría escuchar en la boda?"></textarea>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
