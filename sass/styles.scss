@@ -41,6 +41,7 @@ body {
   font-weight: $light;
   color: $txt-primary;
   -webkit-text-size-adjust: 100%;
+  letter-spacing: 4px;
   //fix for iOS
 }
 *:focus {
@@ -58,9 +59,11 @@ section .header {
 }
 .section-padding {
   padding: $section-padding;
+  /*
   h1 {
     font-size: 3em;
   }
+  */
 }
 .section-border {
   border-bottom: 1px solid $keyline-color;
@@ -286,6 +289,15 @@ Hero
   .hero-content img {
     width: 55%;
     margin-bottom: 12%;
+  }
+  .btn {
+    background-color: $accent-color;
+    color: #fff;
+    border-color:  $accent-color;
+
+    &:hover {
+      border-color: #fff;
+    }
   }
 }
 .navigation {

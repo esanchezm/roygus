@@ -3,9 +3,9 @@
 
 // Fonts
 
-$sans-serif: 'Open Sans', sans-serif;
+$sans-serif: 'Open Sans', Arial, sans-serif;
 $serif: Merriweather, Georgia, 'Times New Roman', serif;
-$accent-font: 'Nunito', sans-serif;
+$accent-font: "Open Sans", Arial, sans-serif;
 
 // Weights
 
@@ -16,12 +16,12 @@ $bold: 700;
 
 // Sizes
 
-$font-size-h1: 6.0em;
-$font-size-h2: 4.0em;
-$font-size-h3: 2.4em;
-$font-size-h4: 1.8em;
-$font-size-h5: 1.5em;
-$font-size-p: 1.5em;
+$font-size-h1: 1.0em;
+$font-size-h2: 1.0em;
+$font-size-h3: 1.0em;
+$font-size-h4: 1.0em;
+$font-size-h5: 1.0em;
+$font-size-p: 1.0em;
 $nav-font-size: 1.3em;
 $blog-post-title: 1.1px;
 
@@ -59,7 +59,6 @@ h3 {
   color: $h3-color;
   font-size: $font-size-h4;
   font-weight: $bold;
-  text-transform: uppercase;
   letter-spacing: 3px;
   line-height: $base-line-height;
 }
@@ -71,6 +70,5 @@ h4 {
 h5 {
   font-size: $font-size-h5;
   color: $h5-color;
-  text-transform: uppercase;
   font-weight: $semibold;
 }
