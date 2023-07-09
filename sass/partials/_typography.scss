@@ -22,6 +22,13 @@ $font-size-h3: 1.0em;
 $font-size-h4: 1.0em;
 $font-size-h5: 1.0em;
 $font-size-p: 1.0em;
+
+$desktop-font-size-h1: 1.5em;
+$desktop-font-size-h2: 1.5em;
+$desktop-font-size-h3: 1.5em;
+$desktop-font-size-h4: 1.5em;
+$desktop-font-size-h5: 1.5em;
+$desktop-font-size-p: 1.5em;
 $nav-font-size: 1.3em;
 $blog-post-title: 1.1px;
 
@@ -39,36 +46,62 @@ $base-line-height: 29px;
 Typography
 ========================================================================== */
 p {
-  font-size: $font-size-p;
+  font-size: $desktop-font-size-p;
   line-height: $base-line-height;
   color: $txt-primary;
   padding-bottom: 20px;
 }
 
 h1 {
-  font-size: $font-size-h1;
+  font-size: $desktop-font-size-h1;
 }
 
 h2 {
-  font-size: $font-size-h2;
+  font-size: $desktop-font-size-h2;
   font-weight: $light;
   color: $h2-color;
 }
 
 h3 {
   color: $h3-color;
-  font-size: $font-size-h4;
+  font-size: $desktop-font-size-h4;
   font-weight: $bold;
   letter-spacing: 3px;
   line-height: $base-line-height;
 }
 
 h4 {
-  font-size: $font-size-h4;
+  font-size: $desktop-font-size-h4;
 }
 
 h5 {
-  font-size: $font-size-h5;
+  font-size: $desktop-font-size-h5;
   color: $h5-color;
   font-weight: $semibold;
+}
+
+@media screen and (max-width: 991px) {
+  p {
+    font-size: $font-size-p;
+  }
+
+  h1 {
+    font-size: $font-size-h1;
+  }
+
+  h2 {
+    font-size: $font-size-h2;
+  }
+
+  h3 {
+    font-size: $font-size-h4;
+  }
+
+  h4 {
+    font-size: $font-size-h4;
+  }
+
+  h5 {
+    font-size: $font-size-h5;
+  }
 }
